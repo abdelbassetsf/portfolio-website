@@ -41,6 +41,48 @@ input[class^=btn-]:hover {
   text-align: center;
 }
 
+.section-title {
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bottom-line {
+  height: 3px;
+  width: 6rem;
+  background: #ffbc00;
+  border-radius: 5px;
+  margin: 0 auto 1rem auto;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -114,6 +156,79 @@ img {
 #header-home h1 {
   font-size: 4rem;
   line-height: 1.2;
+}
+
+#home-a .specials {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+#home-a .fas {
+  color: #ffbc00;
+  padding-bottom: 0.6rem;
+}
+#home-b .stats {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#home-b .stats li {
+  line-height: 2;
+}
+#home-b .stats li.stats-title {
+  font-size: 1.5rem;
+}
+#home-b .stats li.stats-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#home-b .stats div {
+  padding: 3rem 0;
+}
+#home-b .stats div:nth-child(odd) {
+  background: #f4f4f4;
+}
+#home-b .stats div:nth-child(even) {
+  background: #ccc;
+}
+#home-c .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+#home-c .process-icon {
+  background-color: #333;
+  border-radius: 50%;
+  display: inline-block;
+  color: #fff;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  position: relative;
+  padding: 2rem;
+  transition: all 0.5s ease-in;
+}
+#home-c .process-icon:hover {
+  background-color: #ffbc00;
+  transform: scale(1.06);
+}
+#home-c .process-icon:hover .process-step {
+  background: #333;
+}
+#home-c .process-step {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  background: #ffbc00;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  padding: 1rem;
+  line-height: 15px;
+  text-align: center;
+  transition: all 0.5s ease-in;
 }
 
 /*# sourceMappingURL=main.css.map */
