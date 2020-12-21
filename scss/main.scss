@@ -74,6 +74,7 @@ img {
     background: $bg-image no-repeat left center/cover;
     height: 100vh;
     color: #fff;
+    position: relative;
 
     // Header content
     .header-content {
@@ -85,6 +86,12 @@ img {
       font-size: 4rem;
       line-height: 1.2;
     }
+  }
+
+  &-inner {
+    background: $bg-image no-repeat 0 30% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
   }
 }
 
@@ -153,6 +160,7 @@ img {
         position: relative;
         padding: 2rem;
         transition: all 0.5s ease-in;
+        box-shadow: 0 5px 7px 3px #ccc;
 
         &:hover {
           background-color: $main-color;
@@ -177,6 +185,140 @@ img {
         line-height: 15px;
         text-align: center;
         transition: all 0.5s ease-in;
+      }
+    }
+  }
+}
+
+// About
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas:
+        'bioimage bio bio'
+        'aw1 aw2 aw3';
+      gap: 1.2rem;
+
+      // grid areas
+      .bio-image {
+        grid-area: bioimage;
+      }
+
+      .bio {
+        grid-area: bio;
+        border-left: 3px solid $main-color;
+
+        padding: 2rem 0.5rem;
+      }
+
+      .award-1 {
+        grid-area: aw1;
+      }
+
+      .award-2 {
+        grid-area: aw2;
+      }
+
+      .award-3 {
+        grid-area: aw3;
+      }
+
+      .award-1 .fas,
+      .award-2 .fas,
+      .award-3 .fas {
+        margin-bottom: 1rem;
+        color: $main-color;
+      }
+    }
+  }
+
+  &-b {
+    .progress {
+      height: 15px;
+      background: $medium-color;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+
+      div {
+        background: $main-color;
+        height: 100%;
+      }
+    }
+  }
+
+  &-c {
+    .about-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  // Testimonials
+  &-d {
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+
+      p {
+        border: 2px solid $medium-color;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        box-shadow: 0 3px 5px #ccc, 0 -3px 5px #ccc;
+      }
+
+      ul {
+        display: flex;
+        margin-top: 1rem;
+        align-items: center;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-right: 0.7rem;
+        box-shadow: 0 3px 5px 2px #ccc;
+      }
+    }
+  }
+}
+
+//Footer
+#footer {
+  background: $dark-color;
+  color: #fff;
+  height: 5rem;
+  text-align: center;
+
+  .footer-content {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social {
+    .fab {
+      margin-right: 1rem;
+      border: 2px solid #fff;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      padding: 0.5rem;
+      line-height: 20px;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        background-color: $main-color;
+        color: $dark-color;
       }
     }
   }
